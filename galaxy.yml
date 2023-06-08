@@ -1,0 +1,16 @@
+namespace: "adampippert"
+name: "acs-gitops"
+version: "1.0.0"
+readme: "README.md"
+authors:
+    - "Adam Pippert"
+    - "Dinesh Lakshmanan"
+    - "Neil Carpenter"
+dependencies:
+    "lvrfrc87.git_acp": ">=2.0.0"
+license:
+    - "MIT"
+tags:
+    - demo
+    - collection
+repository: "https://www.github.com/adampippert/acs-gitops"
