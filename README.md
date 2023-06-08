@@ -1,5 +1,8 @@
 # Manage policies in ACS with Ansible
 
+This is an Ansible collection forked from a GitOps project for Advanced Cluster Security, located at: https://github.com/neilcar/ansible-acs-policy-mgmt.  A great and mighty thanks to Neil Carpenter for the initial work to make this possible.
+
+
 ## Challenge
 
 We want to manage ACS policies in a GitOps fashion with two major goals:
