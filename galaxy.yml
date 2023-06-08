@@ -1,5 +1,5 @@
 namespace: "adampippert"
-name: "acs-gitops"
+name: "acs_gitops"
 version: "1.0.0"
 readme: "README.md"
 authors:
