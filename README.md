@@ -1,3 +1,9 @@
+
+# acs-gitops
+
+This is an Ansible collection that is forked from a project located at https://github.com/neilcar/ansible-acs-policy-mgmt.  The intent is to make this code a collection that can be used as a dependency in other ACS related Ansible automation.
+
+
 # Manage policies in ACS with Ansible
 
 ## Challenge
