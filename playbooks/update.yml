@@ -20,23 +20,23 @@
   tasks:
   - name: Initial fetch
     include_tasks:
-      file: tasks/fetch_policies.yml
+      file: ../tasks/fetch_policies.yml
     vars:
-      dest_path: files/policies_desired
+      dest_path: ../files/policies_desired
 
   - name: Clear policies_actual
     ansible.builtin.file:
-      path: files/policies_actual
+      path: ../files/policies_actual
       state: absent
     changed_when: false
 
   - name: Get policies
     include_tasks:
-      file: tasks/get_policies.yml
+      file: ../tasks/get_policies.yml
 
   - name: Process policies
     include_tasks:
-      file: tasks/process_policies.yml
+      file: ../tasks/process_policies.yml
     register: process_policies
 
   - debug: var=process_policies
@@ -44,7 +44,7 @@
   handlers:
   - name: Push to git
     include_tasks:
-      file: tasks/push_policies.yml
+      file: ../tasks/push_policies.yml
     vars:
       branch: "{{ ansible_date_time.iso8601_micro | to_uuid }}"
       comment: "Detected new policies"
