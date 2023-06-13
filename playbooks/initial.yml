@@ -20,14 +20,14 @@
   tasks:
   - name: Initial fetch
     include_tasks:
-      file: tasks/fetch_policies.yml
+      file: ../tasks/fetch_policies.yml
     vars:
       dest_path: files/policies_actual
 
   - name: Get policies
     include_tasks:
-      file: tasks/get_policies.yml
+      file: ../tasks/get_policies.yml
 
   - name: Push to git
     include_tasks:
-      file: tasks/push_policies.yml
+      file: ../tasks/push_policies.yml
